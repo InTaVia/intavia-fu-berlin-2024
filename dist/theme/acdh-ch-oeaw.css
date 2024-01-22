@@ -366,7 +366,7 @@ section.has-dark-background h6 {
   }
 }
 
-body::after :not(.fullscreen-background) {
+body::after {
   position: absolute;
   content: "WWWW.OEAW.AC.AT";
   color: #fff;
@@ -383,7 +383,7 @@ body::after :not(.fullscreen-background) {
   justify-content: center;
 }
 
-body:not(~div.fullscreen-background.present)::before {
+body::before {
   position: absolute;
   content: "";
   display: block;
@@ -397,7 +397,7 @@ body:not(~div.fullscreen-background.present)::before {
   z-index: 9999;
 }
 
-div.reveal:not(~div.fullscreen-background.present)::before {
+div.reveal::before {
   position: absolute;
   content: "";
   display: block;
@@ -414,7 +414,7 @@ div.reveal:not(~div.fullscreen-background.present)::before {
   list-style-type: "- ";
 }
 
-div.reveal:not(~div.fullscreen-background.present)::after {
+div.reveal::after {
   position: absolute;
   content: "ACDH-CH - Austrian Centre for Digital humanities and cultural heritage";
   color: #fff;
